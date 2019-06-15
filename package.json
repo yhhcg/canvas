@@ -1,0 +1,10 @@
+{
+  "name": "canvas",
+  "version": "1.0.0",
+  "description": "Shapes written on canvas",
+  "main": "src/index.js",
+  "private": false,
+  "repository": "git@github.com:yhhcg/canvas.git",
+  "author": "yhhcg",
+  "license": "MIT"
+}
