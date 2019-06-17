@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas height="200" id="textVertical" width="400" style="border: 1px solid red"></canvas>
+  <div id="canvas"></div>
+</body>
+<script src="../src/TextVertical/index.js"></script>
+<script>
+  window.onload = function() {
+    const canvas = document.getElementById("textVertical");
+    const context = canvas.getContext('2d');
+
+    const textVerticalImage = new TextVertical('龙翔桥', {
+      height: 200,
+      width: 400,
+    });
+
+    context.drawImage(textVerticalImage, 0, 0);
+  };
+</script>
+</html>
